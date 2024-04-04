@@ -109,6 +109,7 @@ app.get('/user/name', async (req, res) => {
 });
 
 // Server berjalan
-app.listen(port, () => {
-  console.log(`Server berjalan di http://localhost:${port}`);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server berjalan di http://localhost:${PORT}`);
 });
